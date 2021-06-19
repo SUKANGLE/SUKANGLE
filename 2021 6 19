@@ -1,0 +1,100 @@
+#define _crt_secure_no_warnings 1
+#include <stdio.h>
+#include <string.h>
+//前置++
+int main()
+{
+	int a=1;
+	int b=++a;//先++后使用
+	printf("%d\n",a);
+	printf("%d\n", b);
+	return 0;
+}
+//后置++
+//int main()
+//{
+//	int a=1;
+//	int b=a++;//先使用后++
+//	printf("%d\n",a);
+//	printf("%d\n", b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a=0;//4个字节，一个字节是8个比特位，32比特位
+//	int h=~a;
+//	//~按2进制位取反
+//	//00000000000000000000000000000000
+//	//11111111111111111111111111111111
+//	//原码   反码    补码
+//	//负数在内存中储存的时候是2进制的补码
+//	//在2进制中最高位唯1时这个数为负数
+//	//10000000000000000000000000000001 原码
+//	//原码得到反码所有2进制数按位取反
+//	//11111111111111111111111111111110 反码
+//	//反码得到补码加一
+//	//11111111111111111111111111111111 补码
+//
+//	printf("%d\n",h);
+//	return 0;
+//}
+
+
+//sizeof计算数组大小，单位字节
+//int main()
+//{
+//	int a=10;
+//	int arr[]={1,2,3,4,5,6};
+//	printf("%d\n",sizeof(int));
+//	printf("%d\n",sizeof(a));
+//	printf("%d\n",sizeof(arr));
+//	printf("%d\n",sizeof(arr)/sizeof(arr[5]));
+//	return 0;
+//}
+
+
+//用函数求两个数的相加值
+//int add(int a,int b)
+//{
+//	int c=a+b;
+//	return c;
+//}
+//int main()
+//{
+//	int d=1;
+//	int e=20;
+//	int num=0;
+//	num=add(d,e);
+//	printf("%d\n",num);
+//	return 0;
+//}
+//用函数求两个数的较大值
+//int	Max (int x,int y)
+//{
+//	if  (x>y)
+//	return x;
+//	else
+//		return y;
+//}
+//int main()
+//{
+//	int a =20;
+//	int b=5;
+//	int max=0;
+//	max =Max(a,b);
+//	printf("%d\n",max);
+//	return 0;
+//}
+//求两个数的较大值
+//int main()
+//{
+//	int a=19;
+//	int b=28;
+//	if(a>b)
+//		printf ("较大值为：%d\n",a);
+//	else
+//		printf("较大值为：%d\n",b);
+//	return 0;
+//}
